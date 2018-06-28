@@ -22,5 +22,5 @@ export declare class QR {
      * @param margin The size of the margins to generate.
      * @returns Boolean buffer of pixels
      */
-    generate(cellSize?: number, margin?: number): boolean[][];
+    generate(): boolean[][];
 }

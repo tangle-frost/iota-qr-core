@@ -37,7 +37,7 @@ Create a new instance of QR.
 
 | Param | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value` typeNumber | `number` | 1 |  1 to 40 |
+| `Default value` typeNumber | `number` | 6 |  1 to 40 |
 | `Default value` errorCorrectLevel | [ErrorCorrectLevel](../enums/errorcorrectlevel.md) |  ErrorCorrectLevel.L |  'L','M','Q','H' |
 
 **Returns:** [QR](qr.md)
@@ -69,18 +69,11 @@ ___
 
 ###  generate
 
-▸ **generate**(cellSize?: *`number`*, margin?: *`number`*): `boolean`[][]
+▸ **generate**(): `boolean`[][]
 
 *Defined in qr.ts:70*
 
 Generate the display buffer.
-
-**Parameters:**
-
-| Param | Type | Default value | Description |
-| ------ | ------ | ------ | ------ |
-| `Default value` cellSize | `number` | 2 |  The size of the cell to generate. |
-| `Default value` margin | `number` |  cellSize * 4 |  The size of the margins to generate. |
 
 **Returns:** `boolean`[][]
 Boolean buffer of pixels

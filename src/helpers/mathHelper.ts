@@ -48,10 +48,10 @@ export class MathHelper {
      */
     public static gexp(value: number): number {
         let localValue = value;
-        while (value < 0) {
+        while (localValue < 0) {
             localValue += 255;
         }
-        while (value >= 256) {
+        while (localValue >= 256) {
             localValue -= 255;
         }
         return MathHelper.EXP_TABLE[localValue];

@@ -37,7 +37,7 @@ export class QR {
      * @param typeNumber 1 to 40
      * @param errorCorrectLevel 'L','M','Q','H'
      */
-    constructor(typeNumber: number = 1, errorCorrectLevel: ErrorCorrectLevel = ErrorCorrectLevel.L) {
+    constructor(typeNumber: number = 6, errorCorrectLevel: ErrorCorrectLevel = ErrorCorrectLevel.L) {
         this._typeNumber = typeNumber;
         this._errorCorrectLevel = errorCorrectLevel;
         this._qrData = [];
@@ -67,23 +67,14 @@ export class QR {
      * @param margin The size of the margins to generate.
      * @returns Boolean buffer of pixels
      */
-    public generate(cellSize: number = 2, margin: number = cellSize * 4): boolean[][] {
+    public generate(): boolean[][] {
         this.makeImpl(false, this.getBestMaskPattern());
 
-        const mods = this._moduleCount;
-        const size = cellSize * mods + margin * 2;
         const pixels: boolean[][] = [];
-        for (let y = 0; y < size; y += 1) {
-            for (let x = 0; x < size; x += 1) {
-                if (margin <= x && x < size - margin &&
-                    margin <= y && y < size - margin &&
-                    this.isDark(
-                        ~~((y - margin) / cellSize),
-                        ~~((x - margin) / cellSize))) {
-                    pixels[x][y] = false;
-                } else {
-                    pixels[x][y] = true;
-                }
+        for (let y = 0; y < this._moduleCount; y++) {
+            for (let x = 0; x < this._moduleCount; x++) {
+                pixels[x] = pixels[x] || [];
+                pixels[x][y] = this.isDark(y, x);
             }
         }
         return pixels;
@@ -142,7 +133,8 @@ export class QR {
             this.setupTypeNumber(test);
         }
 
-        const data = this.createData(this._typeNumber, this._errorCorrectLevel, this._qrData);
+        const data = this.createData();
+
         this.mapData(data, maskPattern);
     }
 
@@ -426,15 +418,15 @@ export class QR {
     }
 
     /* @internal */
-    private createData(typeNumber: number, errorCorrectLevel: ErrorCorrectLevel, dataArray: QRDataBase[]): number[] {
-        const rsBlocks: RSBlock[] = RSBlock.getRSBlocks(typeNumber, errorCorrectLevel);
+    private createData(): number[] {
+        const rsBlocks: RSBlock[] = RSBlock.getRSBlocks(this._typeNumber, this._errorCorrectLevel);
 
         const buffer = new BitBuffer();
 
-        for (let i = 0; i < dataArray.length; i++) {
-            const data = dataArray[i];
+        for (let i = 0; i < this._qrData.length; i++) {
+            const data = this._qrData[i];
             buffer.put(data.getMode(), 4);
-            buffer.put(data.getLength(), data.getLengthInBits(typeNumber));
+            buffer.put(data.getLength(), data.getLengthInBits(this._typeNumber));
             data.write(buffer);
         }
 
@@ -445,7 +437,7 @@ export class QR {
         }
 
         if (buffer.getLengthInBits() > totalDataCount * 8) {
-            throw new Error(`Code length overflow, (${buffer.getLengthInBits()} > ${totalDataCount * 8}`);
+            throw new Error(`There is not enough space in the QR code to store the data, ${buffer.getLengthInBits()} > ${totalDataCount * 8}, try increasing the typeNumber from ${this._typeNumber}`);
         }
 
         // end
@@ -461,7 +453,6 @@ export class QR {
         // padding
         let flag = true;
         while (flag) {
-
             if (buffer.getLengthInBits() >= totalDataCount * 8) {
                 break;
             }
@@ -499,6 +490,8 @@ export class QR {
             }
             return a;
         }
+
+        // tslint:disable:no-console
 
         for (let r = 0; r < rsBlocks.length; r++) {
 

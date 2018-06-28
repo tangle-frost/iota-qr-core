@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">88.89% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/18</span>
+        <span class='fraction'>16/18</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">83.33% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>3/6</span>
+        <span class='fraction'>5/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">33.33% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/3</span>
+        <span class='fraction'>3/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">88.89% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/18</span>
+        <span class='fraction'>16/18</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -119,7 +119,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -142,11 +142,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38016x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38016x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,14 +153,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">29736x</span>
+<span class="cline-any cline-yes">29736x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">29736x</span>
+<span class="cline-any cline-yes">12717x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">29736x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
@@ -178,7 +178,7 @@ export class MathHelper {
      * Initialize the math helper.
      */
     public static initialize(): void {
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (!MathHelper.EXP_TABLE) {
+        if (!MathHelper.EXP_TABLE) {
             MathHelper.EXP_TABLE = [];
             MathHelper.LOG_TABLE = [];
             for (let i = 0; i &lt; 256; i++) {
@@ -200,11 +200,11 @@ export class MathHelper {
      * @param value The value to get the log of.
      * @returns the log of the value.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> glog(value: number): number {
-<span class="cstat-no" title="statement not covered" >        if (value &lt; 1) {</span>
+    public static glog(value: number): number {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (value &lt; 1) {
 <span class="cstat-no" title="statement not covered" >            throw new Error(`log(' + ${value} + ')'`);</span>
         }
-<span class="cstat-no" title="statement not covered" >        return MathHelper.LOG_TABLE[value];</span>
+        return MathHelper.LOG_TABLE[value];
     }
 &nbsp;
     /**
@@ -212,15 +212,15 @@ export class MathHelper {
      * @param value The value to get the exponent of.
      * @returns The exponent of the value.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> gexp(value: number): number {
-        let localValue = <span class="cstat-no" title="statement not covered" >value;</span>
-<span class="cstat-no" title="statement not covered" >        while (value &lt; 0) {</span>
+    public static gexp(value: number): number {
+        let localValue = value;
+        while (localValue &lt; 0) {
 <span class="cstat-no" title="statement not covered" >            localValue += 255;</span>
         }
-<span class="cstat-no" title="statement not covered" >        while (value &gt;= 256) {</span>
-<span class="cstat-no" title="statement not covered" >            localValue -= 255;</span>
+        while (localValue &gt;= 256) {
+            localValue -= 255;
         }
-<span class="cstat-no" title="statement not covered" >        return MathHelper.EXP_TABLE[localValue];</span>
+        return MathHelper.EXP_TABLE[localValue];
     }
 }
 &nbsp;</pre></td></tr>

@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">5.88% </span>
+        <span class="strong">70.59% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/17</span>
+        <span class='fraction'>12/17</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>4/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">71.43% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/7</span>
+        <span class='fraction'>5/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">5.88% </span>
+        <span class="strong">70.59% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/17</span>
+        <span class='fraction'>12/17</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line medium'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -104,32 +104,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1224x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1062x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1233x</span>
+<span class="cline-any cline-yes">9792x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9792x</span>
+<span class="cline-any cline-yes">1224x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9792x</span>
+<span class="cline-any cline-yes">4437x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9792x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -152,33 +152,33 @@ export class BitBuffer {
     private readonly _buffer: number[];
     private _length: number;
 &nbsp;
-<span class="fstat-no" title="function not covered" >    public constructor() {</span>
-<span class="cstat-no" title="statement not covered" >        this._buffer = [];</span>
-<span class="cstat-no" title="statement not covered" >        this._length = 0;</span>
+    public constructor() {
+        this._buffer = [];
+        this._length = 0;
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >getBuffer</span>(): number[] {
-<span class="cstat-no" title="statement not covered" >        return this._buffer;</span>
+    public getBuffer(): number[] {
+        return this._buffer;
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >getLengthInBits</span>(): number {
-<span class="cstat-no" title="statement not covered" >        return this._length;</span>
+    public getLengthInBits(): number {
+        return this._length;
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >put</span>(num: number, length: number): void {
-<span class="cstat-no" title="statement not covered" >        for (let i = 0; i &lt; length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >            this.putBit(((num &gt;&gt;&gt; (length - i - 1)) &amp; 1) === 1);</span>
+    public put(num: number, length: number): void {
+        for (let i = 0; i &lt; length; i++) {
+            this.putBit(((num &gt;&gt;&gt; (length - i - 1)) &amp; 1) === 1);
         }
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >putBit</span>(bit: boolean): void {
-<span class="cstat-no" title="statement not covered" >        if (this._length === this._buffer.length * 8) {</span>
-<span class="cstat-no" title="statement not covered" >            this._buffer.push(0);</span>
+    public putBit(bit: boolean): void {
+        if (this._length === this._buffer.length * 8) {
+            this._buffer.push(0);
         }
-<span class="cstat-no" title="statement not covered" >        if (bit) {</span>
-<span class="cstat-no" title="statement not covered" >            this._buffer[~~(this._length / 8)] |= (0x80 &gt;&gt;&gt; (this._length % 8));</span>
+        if (bit) {
+            this._buffer[~~(this._length / 8)] |= (0x80 &gt;&gt;&gt; (this._length % 8));
         }
-<span class="cstat-no" title="statement not covered" >        this._length++;</span>
+        this._length++;
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >toString</span>(): string {
