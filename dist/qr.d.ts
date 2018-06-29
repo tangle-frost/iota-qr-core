@@ -1,4 +1,5 @@
 import { ErrorCorrectLevel } from "./models/errorCorrectLevel";
+import { QRCellData } from "./models/qrCellData";
 import { QRDataBase } from "./models/qrDataBase";
 /**
  * Class to generates QR codes from data.
@@ -22,5 +23,5 @@ export declare class QR {
      * @param margin The size of the margins to generate.
      * @returns Boolean buffer of pixels
      */
-    generate(): boolean[][];
+    generate(): QRCellData;
 }

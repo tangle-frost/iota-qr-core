@@ -5,6 +5,7 @@ import { Polynomial } from "./helpers/polynomial";
 import { QRHelper } from "./helpers/qrHelper";
 import { RSBlock } from "./helpers/rsBlock";
 import { ErrorCorrectLevel } from "./models/errorCorrectLevel";
+import { QRCellData } from "./models/qrCellData";
 import { QRDataBase } from "./models/qrDataBase";
 
 /**
@@ -27,7 +28,7 @@ export class QR {
     private readonly _qrData: QRDataBase[];
 
     /* @internal */
-    private _modules: boolean[][];
+    private _modules: QRCellData;
 
     /* @internal */
     private _moduleCount: number;
@@ -67,10 +68,10 @@ export class QR {
      * @param margin The size of the margins to generate.
      * @returns Boolean buffer of pixels
      */
-    public generate(): boolean[][] {
+    public generate(): QRCellData {
         this.makeImpl(false, this.getBestMaskPattern());
 
-        const pixels: boolean[][] = [];
+        const pixels: QRCellData = [];
         for (let y = 0; y < this._moduleCount; y++) {
             for (let x = 0; x < this._moduleCount; x++) {
                 pixels[x] = pixels[x] || [];

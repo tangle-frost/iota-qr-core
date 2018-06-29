@@ -594,13 +594,15 @@
 <a name='L546'></a><a href='#L546'>546</a>
 <a name='L547'></a><a href='#L547'>547</a>
 <a name='L548'></a><a href='#L548'>548</a>
-<a name='L549'></a><a href='#L549'>549</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L549'></a><a href='#L549'>549</a>
+<a name='L550'></a><a href='#L550'>550</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1149,6 +1151,7 @@ import { Polynomial } from "./helpers/polynomial";
 import { QRHelper } from "./helpers/qrHelper";
 import { RSBlock } from "./helpers/rsBlock";
 import { ErrorCorrectLevel } from "./models/errorCorrectLevel";
+import { QRCellData } from "./models/qrCellData";
 import { QRDataBase } from "./models/qrDataBase";
 &nbsp;
 /**
@@ -1171,7 +1174,7 @@ export class QR {
     private readonly _qrData: QRDataBase[];
 &nbsp;
     /* @internal */
-    private _modules: boolean[][];
+    private _modules: QRCellData;
 &nbsp;
     /* @internal */
     private _moduleCount: number;
@@ -1211,10 +1214,10 @@ export class QR {
      * @param margin The size of the margins to generate.
      * @returns Boolean buffer of pixels
      */
-    public generate(): boolean[][] {
+    public generate(): QRCellData {
         this.makeImpl(false, this.getBestMaskPattern());
 &nbsp;
-        const pixels: boolean[][] = [];
+        const pixels: QRCellData = [];
         for (let y = 0; y &lt; this._moduleCount; y++) {
             for (let x = 0; x &lt; this._moduleCount; x++) {
                 pixels[x] = pixels[x] || [];

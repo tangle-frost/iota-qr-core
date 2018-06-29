@@ -19,7 +19,7 @@ describe("QR", () => {
             for (let x = 0; x < data.length; x++) {
                 for (let y = 0; y < data[x].length; y++) {
                     if (data[x][y]) {
-                        text += `<rect x="${x * 10 + 50}" y="${y * 10 + 50}" width="10" height="10" style="fill:rgb(0,0,0)" />\n`;
+                        text += `<rect x="${x * 10 + 50}" y="${y * 10 + 50}" width="10" height="10" fill="black" />\n`;
                     }
                 }
                 text += "\n";

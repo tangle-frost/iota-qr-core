@@ -29,7 +29,7 @@ Class to generates QR codes from data. Based on [https://github.com/kazuhikoaras
 
 ⊕ **new QR**(typeNumber?: *`number`*, errorCorrectLevel?: *[ErrorCorrectLevel](../enums/errorcorrectlevel.md)*): [QR](qr.md)
 
-*Defined in qr.ts:33*
+*Defined in qr.ts:34*
 
 Create a new instance of QR.
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **addData**(qrData: * [QRDataBase](qrdatabase.md) &#124; `string`*): `void`
 
-*Defined in qr.ts:54*
+*Defined in qr.ts:55*
 
 Add data to the QR Code.
 
@@ -69,13 +69,13 @@ ___
 
 ###  generate
 
-▸ **generate**(): `boolean`[][]
+▸ **generate**(): [QRCellData](../#qrcelldata)
 
-*Defined in qr.ts:70*
+*Defined in qr.ts:71*
 
 Generate the display buffer.
 
-**Returns:** `boolean`[][]
+**Returns:** [QRCellData](../#qrcelldata)
 Boolean buffer of pixels
 
 ___

@@ -22,5 +22,23 @@
 * [QRNumber](classes/qrnumber.md)
 * [RSBlock](classes/rsblock.md)
 
+### Type aliases
+
+* [QRCellData](#qrcelldata)
+
 ---
+
+## Type aliases
+
+<a id="qrcelldata"></a>
+
+###  QRCellData
+
+**ΤQRCellData**: *`boolean`[][]*
+
+*Defined in models/qrCellData.ts:4*
+
+Definition of type for QR Code Cell data
+
+___
 

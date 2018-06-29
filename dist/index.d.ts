@@ -10,6 +10,7 @@ export * from "./helpers/mathHelper";
 export * from "./helpers/polynomial";
 export * from "./helpers/qrHelper";
 export * from "./helpers/rsBlock";
+export * from "./models/qrCellData";
 export * from "./models/errorCorrectLevel";
 export * from "./models/maskPattern";
 export * from "./models/qrDataBase";
