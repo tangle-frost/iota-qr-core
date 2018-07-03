@@ -1,4 +1,7 @@
+import { NumberHelper } from "@tangle-frost/iota-core/dist/helpers/numberHelper";
+import { QRAlphaNumeric } from "./data/qrAlphaNumeric";
 import { QRByte8 } from "./data/qrByte8";
+import { QRNumber } from "./data/qrNumber";
 import { BitBuffer } from "./helpers/bitBuffer";
 import { MathHelper } from "./helpers/mathHelper";
 import { Polynomial } from "./helpers/polynomial";
@@ -39,6 +42,9 @@ export class QR {
      * @param errorCorrectLevel 'L','M','Q','H'
      */
     constructor(typeNumber: number = 6, errorCorrectLevel: ErrorCorrectLevel = ErrorCorrectLevel.L) {
+        if (!NumberHelper.isInteger(typeNumber) || typeNumber < 1 || typeNumber > 40) {
+            throw Error("The typeNumber parameter should be a number >= 1 and <= 40");
+        }
         this._typeNumber = typeNumber;
         this._errorCorrectLevel = errorCorrectLevel;
         this._qrData = [];
@@ -49,17 +55,27 @@ export class QR {
     }
 
     /**
-     * Add data to the QR Code.
+     * Add text data to the QR Code.
      * @param qrData The data to add.
      */
-    public addData(qrData: QRDataBase | string): void {
-        if (qrData instanceof QRDataBase) {
-            this._qrData.push(qrData);
-        } else if (typeof qrData === "string") {
-            this._qrData.push(new QRByte8(qrData));
-        } else {
-            throw typeof qrData;
-        }
+    public addText(qrData: string): void {
+        this._qrData.push(new QRByte8(qrData));
+    }
+
+    /**
+     * Add number to the QR Code.
+     * @param qrData The data to add.
+     */
+    public addNumber(qrData: string): void {
+        this._qrData.push(new QRNumber(qrData));
+    }
+
+    /**
+     * Add alpha numeric to the QR Code.
+     * @param qrData The data to add.
+     */
+    public addAlphaNumeric(qrData: string): void {
+        this._qrData.push(new QRAlphaNumeric(qrData));
     }
 
     /**

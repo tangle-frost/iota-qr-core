@@ -16,7 +16,9 @@ Class to generates QR codes from data. Based on [https://github.com/kazuhikoaras
 
 ### Methods
 
-* [addData](qr.md#adddata)
+* [addAlphaNumeric](qr.md#addalphanumeric)
+* [addNumber](qr.md#addnumber)
+* [addText](qr.md#addtext)
 * [generate](qr.md#generate)
 
 ---
@@ -29,7 +31,7 @@ Class to generates QR codes from data. Based on [https://github.com/kazuhikoaras
 
 ⊕ **new QR**(typeNumber?: *`number`*, errorCorrectLevel?: *[ErrorCorrectLevel](../enums/errorcorrectlevel.md)*): [QR](qr.md)
 
-*Defined in qr.ts:34*
+*Defined in qr.ts:37*
 
 Create a new instance of QR.
 
@@ -46,21 +48,59 @@ ___
 
 ## Methods
 
-<a id="adddata"></a>
+<a id="addalphanumeric"></a>
 
-###  addData
+###  addAlphaNumeric
 
-▸ **addData**(qrData: * [QRDataBase](qrdatabase.md) &#124; `string`*): `void`
+▸ **addAlphaNumeric**(qrData: *`string`*): `void`
 
-*Defined in qr.ts:55*
+*Defined in qr.ts:77*
 
-Add data to the QR Code.
+Add alpha numeric to the QR Code.
 
 **Parameters:**
 
 | Param | Type | Description |
 | ------ | ------ | ------ |
-| qrData |  [QRDataBase](qrdatabase.md) &#124; `string`|  The data to add. |
+| qrData | `string` |  The data to add. |
+
+**Returns:** `void`
+
+___
+<a id="addnumber"></a>
+
+###  addNumber
+
+▸ **addNumber**(qrData: *`string`*): `void`
+
+*Defined in qr.ts:69*
+
+Add number to the QR Code.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| qrData | `string` |  The data to add. |
+
+**Returns:** `void`
+
+___
+<a id="addtext"></a>
+
+###  addText
+
+▸ **addText**(qrData: *`string`*): `void`
+
+*Defined in qr.ts:61*
+
+Add text data to the QR Code.
+
+**Parameters:**
+
+| Param | Type | Description |
+| ------ | ------ | ------ |
+| qrData | `string` |  The data to add. |
 
 **Returns:** `void`
 
@@ -71,7 +111,7 @@ ___
 
 ▸ **generate**(): [QRCellData](../#qrcelldata)
 
-*Defined in qr.ts:71*
+*Defined in qr.ts:87*
 
 Generate the display buffer.
 

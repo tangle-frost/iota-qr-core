@@ -57,7 +57,7 @@ export class QRNumber extends QRDataBase {
 
     /* @internal */
     private charToNum(c: string): number {
-        if ("0" <= c && c <= "9") {
+        if (c >= "0" && c <= "9") {
             return c.charCodeAt(0) - "0".charCodeAt(0);
         }
         throw new Error(`Illegal character in string : ${c}`);

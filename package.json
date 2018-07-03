@@ -47,6 +47,9 @@
         "security": "nsp check",
         "dist": "npm-run-all build test pkg docs"
     },
+    "dependencies": {
+        "@tangle-frost/iota-core": "^0.0.1"
+    },
     "devDependencies": {
         "@babel/core": "^7.0.0-beta.42",
         "@babel/plugin-transform-runtime": "^7.0.0-beta.42",
