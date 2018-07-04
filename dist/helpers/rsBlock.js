@@ -47,7 +47,7 @@ class RSBlock {
                 return RSBlock.RS_BLOCK_TABLE[(typeNumber - 1) * 4 + 3];
             default:
         }
-        throw new Error(`Invalid error correct lebel ${errorCorrectLevel}`);
+        throw new Error(`Invalid error correct level ${errorCorrectLevel}`);
     }
     /**
      * Get the data count.

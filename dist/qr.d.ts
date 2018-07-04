@@ -7,7 +7,7 @@ import { QRCellData } from "./models/qrCellData";
 export declare class QR {
     /**
      * Create a new instance of QR.
-     * @param typeNumber 1 to 40
+     * @param typeNumber 0 to 40, 0 means autodetect
      * @param errorCorrectLevel 'L','M','Q','H'
      */
     constructor(typeNumber?: number, errorCorrectLevel?: ErrorCorrectLevel);

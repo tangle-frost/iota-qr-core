@@ -39,7 +39,7 @@ Create a new instance of QR.
 
 | Param | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
-| `Default value` typeNumber | `number` | 6 |  1 to 40 |
+| `Default value` typeNumber | `number` | 6 |  0 to 40, 0 means autodetect |
 | `Default value` errorCorrectLevel | [ErrorCorrectLevel](../enums/errorcorrectlevel.md) |  ErrorCorrectLevel.L |  'L','M','Q','H' |
 
 **Returns:** [QR](qr.md)

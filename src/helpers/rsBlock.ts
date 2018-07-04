@@ -306,7 +306,7 @@ export class RSBlock {
             default:
         }
 
-        throw new Error(`Invalid error correct lebel ${errorCorrectLevel}`);
+        throw new Error(`Invalid error correct level ${errorCorrectLevel}`);
     }
 
     /**

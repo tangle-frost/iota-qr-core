@@ -22,7 +22,7 @@ export class QR {
     private static readonly PAD1: number = 0x11;
 
     /* @internal */
-    private readonly _typeNumber: number;
+    private _typeNumber: number;
 
     /* @internal */
     private readonly _errorCorrectLevel: ErrorCorrectLevel;
@@ -38,12 +38,12 @@ export class QR {
 
     /**
      * Create a new instance of QR.
-     * @param typeNumber 1 to 40
+     * @param typeNumber 0 to 40, 0 means autodetect
      * @param errorCorrectLevel 'L','M','Q','H'
      */
     constructor(typeNumber: number = 6, errorCorrectLevel: ErrorCorrectLevel = ErrorCorrectLevel.L) {
-        if (!NumberHelper.isInteger(typeNumber) || typeNumber < 1 || typeNumber > 40) {
-            throw Error("The typeNumber parameter should be a number >= 1 and <= 40");
+        if (!NumberHelper.isInteger(typeNumber) || typeNumber < 0 || typeNumber > 40) {
+            throw Error("The typeNumber parameter should be a number >= 0 and <= 40");
         }
         this._typeNumber = typeNumber;
         this._errorCorrectLevel = errorCorrectLevel;
@@ -85,6 +85,8 @@ export class QR {
      * @returns Boolean buffer of pixels
      */
     public generate(): QRCellData {
+        this.autoDetectTypeNumber();
+
         this.makeImpl(false, this.getBestMaskPattern());
 
         const pixels: QRCellData = [];
@@ -561,5 +563,34 @@ export class QR {
             }
         }
         return data;
+    }
+
+    /* @internal */
+    private autoDetectTypeNumber(): void {
+        if (this._typeNumber === 0) {
+            for (let typeNumber = 1; typeNumber <= 40; typeNumber++) {
+                const rsBlocks = RSBlock.getRSBlocks(typeNumber, this._errorCorrectLevel);
+                const buffer = new BitBuffer();
+
+                for (let i = 0; i < this._qrData.length; i++) {
+                    const data = this._qrData[i];
+                    buffer.put(data.getMode(), 4);
+                    buffer.put(data.getLength(), data.getLengthInBits(typeNumber));
+                    data.write(buffer);
+                }
+
+                let totalDataCount = 0;
+                for (let i = 0; i < rsBlocks.length; i++) {
+                    totalDataCount += rsBlocks[i].getDataCount();
+                }
+
+                if (buffer.getLengthInBits() <= totalDataCount * 8) {
+                    this._typeNumber = typeNumber;
+                    break;
+                } else if (typeNumber === 40) {
+                    throw new Error(`There is not enough space in the QR code to store the data, ${buffer.getLengthInBits()} > ${totalDataCount * 8}, typeNumber can not be > 40`);
+                }
+            }
+        }
     }
 }
