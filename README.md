@@ -1,5 +1,4 @@
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/tangle-frost/iota-qr-core/master/LICENSE) [![Build Status](https://travis-ci.org/tangle-frost/iota-qr-core.svg?branch=master)](https://travis-ci.org/tangle-frost/iota-qr-core) [![NSP Status](https://nodesecurity.io/orgs/tangle-frost/projects/ffffffff-ffff-ffff-ffff-ffffffffffff/badge)](https://nodesecurity.io/orgs/tangle-frost/projects/ffffffff-ffff-ffff-ffff-ffffffffffff)
-[![Coveralls](https://img.shields.io/coveralls/tangle-frost/iota-qr-core.svg)](https://coveralls.io/github/tangle-frost/iota-qr-core)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/tangle-frost/iota-qr-core/master/LICENSE) [![Build Status](https://travis-ci.org/tangle-frost/iota-qr-core.svg?branch=master)](https://travis-ci.org/tangle-frost/iota-qr-core) 
 
 # Tangle Frost - IOTA QR Core
 
