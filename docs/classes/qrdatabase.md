@@ -38,7 +38,7 @@ Base class for storing QR Data. Based on [https://github.com/kazuhikoarase/qrcod
 
 ⊕ **new QRDataBase**(mode: *[QRDataMode](../enums/qrdatamode.md)*, data: *`string`*): [QRDataBase](qrdatabase.md)
 
-*Defined in models/qrDataBase.ts:12*
+*Defined in [models/qrDataBase.ts:12](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L12*
 
 Create a new instance of QRDataBase.
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **getData**(): `string`
 
-*Defined in models/qrDataBase.ts:36*
+*Defined in [models/qrDataBase.ts:36](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L36*
 
 Get the data.
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **getLength**(): `number`
 
-*Defined in models/qrDataBase.ts:44*
+*Defined in [models/qrDataBase.ts:44](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L44*
 
 Get the length of the data.
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **getLengthInBits**(typeNumber: *`number`*): `number`
 
-*Defined in models/qrDataBase.ts:57*
+*Defined in [models/qrDataBase.ts:57](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L57*
 
 Get the length in bits of the data.
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **getMode**(): [QRDataMode](../enums/qrdatamode.md)
 
-*Defined in models/qrDataBase.ts:28*
+*Defined in [models/qrDataBase.ts:28](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L28*
 
 Get the data mode.
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **write**(buffer: *[BitBuffer](bitbuffer.md)*): `void`
 
-*Defined in models/qrDataBase.ts:50*
+*Defined in [models/qrDataBase.ts:50](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L50*
 
 Write data into the buffer.
 

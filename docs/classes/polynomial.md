@@ -33,7 +33,7 @@ Class to represent a polynomial. Based on [https://github.com/kazuhikoarase/qrco
 
 ⊕ **new Polynomial**(num: *`number`[]*, shift?: *`number`*): [Polynomial](polynomial.md)
 
-*Defined in helpers/polynomial.ts:9*
+*Defined in [helpers/polynomial.ts:9](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L9*
 
 Create a new instance of Polynomial.
 
@@ -56,7 +56,7 @@ ___
 
 ▸ **getAt**(index: *`number`*): `number`
 
-*Defined in helpers/polynomial.ts:38*
+*Defined in [helpers/polynomial.ts:38](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L38*
 
 The the value of the polynomial at given index.
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **getLength**(): `number`
 
-*Defined in helpers/polynomial.ts:46*
+*Defined in [helpers/polynomial.ts:46](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L46*
 
 Get the length of the polynomial.
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **mod**(e: *[Polynomial](polynomial.md)*): [Polynomial](polynomial.md)
 
-*Defined in helpers/polynomial.ts:105*
+*Defined in [helpers/polynomial.ts:105](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L105*
 
 Get the modulus of the polynomial from another.
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **multiply**(e: *[Polynomial](polynomial.md)*): [Polynomial](polynomial.md)
 
-*Defined in helpers/polynomial.ts:85*
+*Defined in [helpers/polynomial.ts:85](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L85*
 
 Multiply the polynomial with another one.
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **toLogString**(): `string`
 
-*Defined in helpers/polynomial.ts:69*
+*Defined in [helpers/polynomial.ts:69](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L69*
 
 Get the log representation of the polynomial.
 
@@ -144,7 +144,7 @@ ___
 
 ▸ **toString**(): `string`
 
-*Defined in helpers/polynomial.ts:54*
+*Defined in [helpers/polynomial.ts:54](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/polynomial.ts#L54*
 
 Convert the polynomial to a string.
 

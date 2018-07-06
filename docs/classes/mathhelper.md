@@ -26,7 +26,7 @@ Class to helper with math. Based on [https://github.com/kazuhikoarase/qrcode-gen
 
 ▸ **gexp**(value: *`number`*): `number`
 
-*Defined in helpers/mathHelper.ts:49*
+*Defined in [helpers/mathHelper.ts:49](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/mathHelper.ts#L49*
 
 Get the exponent of the value.
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **glog**(value: *`number`*): `number`
 
-*Defined in helpers/mathHelper.ts:37*
+*Defined in [helpers/mathHelper.ts:37](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/mathHelper.ts#L37*
 
 Get the log of the value.
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **initialize**(): `void`
 
-*Defined in helpers/mathHelper.ts:14*
+*Defined in [helpers/mathHelper.ts:14](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/mathHelper.ts#L14*
 
 Initialize the math helper.
 

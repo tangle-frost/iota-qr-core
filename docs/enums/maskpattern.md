@@ -27,7 +27,7 @@ Mask patterns for QR codes. Based on [https://github.com/kazuhikoarase/qrcode-ge
 
 **PATTERN000**:  = 0
 
-*Defined in models/maskPattern.ts:9*
+*Defined in [models/maskPattern.ts:9](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L9*
 
 mask pattern 000
 
@@ -38,7 +38,7 @@ ___
 
 **PATTERN001**:  = 1
 
-*Defined in models/maskPattern.ts:14*
+*Defined in [models/maskPattern.ts:14](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L14*
 
 mask pattern 001
 
@@ -49,7 +49,7 @@ ___
 
 **PATTERN010**:  = 2
 
-*Defined in models/maskPattern.ts:19*
+*Defined in [models/maskPattern.ts:19](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L19*
 
 mask pattern 010
 
@@ -60,7 +60,7 @@ ___
 
 **PATTERN011**:  = 3
 
-*Defined in models/maskPattern.ts:24*
+*Defined in [models/maskPattern.ts:24](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L24*
 
 mask pattern 011
 
@@ -71,7 +71,7 @@ ___
 
 **PATTERN100**:  = 4
 
-*Defined in models/maskPattern.ts:29*
+*Defined in [models/maskPattern.ts:29](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L29*
 
 mask pattern 100
 
@@ -82,7 +82,7 @@ ___
 
 **PATTERN101**:  = 5
 
-*Defined in models/maskPattern.ts:34*
+*Defined in [models/maskPattern.ts:34](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L34*
 
 mask pattern 101
 
@@ -93,7 +93,7 @@ ___
 
 **PATTERN110**:  = 6
 
-*Defined in models/maskPattern.ts:39*
+*Defined in [models/maskPattern.ts:39](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L39*
 
 mask pattern 110
 
@@ -104,7 +104,7 @@ ___
 
 **PATTERN111**:  = 7
 
-*Defined in models/maskPattern.ts:44*
+*Defined in [models/maskPattern.ts:44](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/maskPattern.ts#L44*
 
 mask pattern 111
 

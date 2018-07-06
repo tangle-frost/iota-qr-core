@@ -29,7 +29,7 @@ Helper methods for QR generation. Based on [https://github.com/kazuhikoarase/qrc
 
 ▸ **getBCHTypeInfo**(data: *`number`*): `number`
 
-*Defined in helpers/qrHelper.ts:172*
+*Defined in [helpers/qrHelper.ts:172](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L172*
 
 Get the BCH type info.
 
@@ -49,7 +49,7 @@ ___
 
 ▸ **getBCHTypeNumber**(data: *`number`*): `number`
 
-*Defined in helpers/qrHelper.ts:186*
+*Defined in [helpers/qrHelper.ts:186](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L186*
 
 Get the BCH type number.
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **getErrorCorrectPolynomial**(errorCorrectLength: *`number`*): [Polynomial](polynomial.md)
 
-*Defined in helpers/qrHelper.ts:128*
+*Defined in [helpers/qrHelper.ts:128](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L128*
 
 Get the error correction polynomial for the error correcto length.
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **getMaskMethod**(maskPattern: *`number`*): `function`
 
-*Defined in helpers/qrHelper.ts:143*
+*Defined in [helpers/qrHelper.ts:143](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L143*
 
 Get the mask method for the given pattern.
 
@@ -109,7 +109,7 @@ ___
 
 ▸ **getMaxLength**(typeNumber: *`number`*, mode: *[QRDataMode](../enums/qrdatamode.md)*, errorCorrectLevel: *[ErrorCorrectLevel](../enums/errorcorrectlevel.md)*): `number`
 
-*Defined in helpers/qrHelper.ts:98*
+*Defined in [helpers/qrHelper.ts:98](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L98*
 
 Get the max length of the data.
 
@@ -131,7 +131,7 @@ ___
 
 ▸ **getPatternPosition**(typeNumber: *`number`*): `number`[]
 
-*Defined in helpers/qrHelper.ts:87*
+*Defined in [helpers/qrHelper.ts:87](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/qrHelper.ts#L87*
 
 Get the pattern position for the given type number.
 

@@ -31,7 +31,7 @@ Class to generates QR codes from data. Based on [https://github.com/kazuhikoaras
 
 ⊕ **new QR**(typeNumber?: *`number`*, errorCorrectLevel?: *[ErrorCorrectLevel](../enums/errorcorrectlevel.md)*): [QR](qr.md)
 
-*Defined in qr.ts:37*
+*Defined in [qr.ts:37](https://github.com/tangle-frost/iota-qr-core/tree/master/src/qr.ts#L37*
 
 Create a new instance of QR.
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **addAlphaNumeric**(qrData: *`string`*): `void`
 
-*Defined in qr.ts:77*
+*Defined in [qr.ts:77](https://github.com/tangle-frost/iota-qr-core/tree/master/src/qr.ts#L77*
 
 Add alpha numeric to the QR Code.
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **addNumber**(qrData: *`string`*): `void`
 
-*Defined in qr.ts:69*
+*Defined in [qr.ts:69](https://github.com/tangle-frost/iota-qr-core/tree/master/src/qr.ts#L69*
 
 Add number to the QR Code.
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **addText**(qrData: *`string`*): `void`
 
-*Defined in qr.ts:61*
+*Defined in [qr.ts:61](https://github.com/tangle-frost/iota-qr-core/tree/master/src/qr.ts#L61*
 
 Add text data to the QR Code.
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **generate**(): [QRCellData](../#qrcelldata)
 
-*Defined in qr.ts:87*
+*Defined in [qr.ts:87](https://github.com/tangle-frost/iota-qr-core/tree/master/src/qr.ts#L87*
 
 Generate the display buffer.
 

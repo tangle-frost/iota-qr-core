@@ -30,7 +30,7 @@ Class to represent a RS Block. Based on [https://github.com/kazuhikoarase/qrcode
 
 ⊕ **new RSBlock**(totalCount: *`number`*, dataCount: *`number`*): [RSBlock](rsblock.md)
 
-*Defined in helpers/rsBlock.ts:257*
+*Defined in [helpers/rsBlock.ts:257](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L257*
 
 Create a new insstance of RSBlock.
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **getDataCount**(): `number`
 
-*Defined in helpers/rsBlock.ts:316*
+*Defined in [helpers/rsBlock.ts:316](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L316*
 
 Get the data count.
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **getTotalCount**(): `number`
 
-*Defined in helpers/rsBlock.ts:324*
+*Defined in [helpers/rsBlock.ts:324](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L324*
 
 Get the total count.
 
@@ -81,7 +81,7 @@ ___
 
 ▸ **getRSBlocks**(typeNumber: *`number`*, errorCorrectLevel: *[ErrorCorrectLevel](../enums/errorcorrectlevel.md)*): [RSBlock](rsblock.md)[]
 
-*Defined in helpers/rsBlock.ts:275*
+*Defined in [helpers/rsBlock.ts:275](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L275*
 
 Get RS Blocks for the type number and error correct level.
 

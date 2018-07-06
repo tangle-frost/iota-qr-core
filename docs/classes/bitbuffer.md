@@ -32,7 +32,7 @@ Class for maintaining data bits. Based on [https://github.com/kazuhikoarase/qrco
 
 ⊕ **new BitBuffer**(): [BitBuffer](bitbuffer.md)
 
-*Defined in helpers/bitBuffer.ts:7*
+*Defined in [helpers/bitBuffer.ts:7](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L7*
 
 **Returns:** [BitBuffer](bitbuffer.md)
 
@@ -46,7 +46,7 @@ ___
 
 ▸ **getBuffer**(): `number`[]
 
-*Defined in helpers/bitBuffer.ts:14*
+*Defined in [helpers/bitBuffer.ts:14](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L14*
 
 **Returns:** `number`[]
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **getLengthInBits**(): `number`
 
-*Defined in helpers/bitBuffer.ts:18*
+*Defined in [helpers/bitBuffer.ts:18](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L18*
 
 **Returns:** `number`
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **put**(num: *`number`*, length: *`number`*): `void`
 
-*Defined in helpers/bitBuffer.ts:22*
+*Defined in [helpers/bitBuffer.ts:22](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L22*
 
 **Parameters:**
 
@@ -86,7 +86,7 @@ ___
 
 ▸ **putBit**(bit: *`boolean`*): `void`
 
-*Defined in helpers/bitBuffer.ts:28*
+*Defined in [helpers/bitBuffer.ts:28](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L28*
 
 **Parameters:**
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **toString**(): `string`
 
-*Defined in helpers/bitBuffer.ts:38*
+*Defined in [helpers/bitBuffer.ts:38](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/bitBuffer.ts#L38*
 
 **Returns:** `string`
 

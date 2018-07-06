@@ -22,7 +22,7 @@ The mode for the qr data. Based on [https://github.com/kazuhikoarase/qrcode-gene
 
 **alphaNumeric**:  =  1 << 1
 
-*Defined in models/qrDataMode.ts:14*
+*Defined in [models/qrDataMode.ts:14](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataMode.ts#L14*
 
 alphabet and number
 
@@ -33,7 +33,7 @@ ___
 
 **byte8**:  =  1 << 2
 
-*Defined in models/qrDataMode.ts:19*
+*Defined in [models/qrDataMode.ts:19](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataMode.ts#L19*
 
 8bit byte
 
@@ -44,7 +44,7 @@ ___
 
 **number**:  =  1 << 0
 
-*Defined in models/qrDataMode.ts:9*
+*Defined in [models/qrDataMode.ts:9](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataMode.ts#L9*
 
 number
 

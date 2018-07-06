@@ -36,7 +36,7 @@ QR Data for representing a alpha numeric. Based on [https://github.com/kazuhikoa
 
 *Overrides [QRDataBase](qrdatabase.md).[constructor](qrdatabase.md#constructor)*
 
-*Defined in data/qrAlphaNumeric.ts:9*
+*Defined in [data/qrAlphaNumeric.ts:9](https://github.com/tangle-frost/iota-qr-core/tree/master/src/data/qrAlphaNumeric.ts#L9*
 
 Create a new instance of QRAlphaNumeric.
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [QRDataBase](qrdatabase.md).[getData](qrdatabase.md#getdata)*
 
-*Defined in models/qrDataBase.ts:36*
+*Defined in [models/qrDataBase.ts:36](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L36*
 
 Get the data.
 
@@ -76,7 +76,7 @@ ___
 
 *Overrides [QRDataBase](qrdatabase.md).[getLength](qrdatabase.md#getlength)*
 
-*Defined in data/qrAlphaNumeric.ts:22*
+*Defined in [data/qrAlphaNumeric.ts:22](https://github.com/tangle-frost/iota-qr-core/tree/master/src/data/qrAlphaNumeric.ts#L22*
 
 Get the length of the data.
 
@@ -92,7 +92,7 @@ ___
 
 *Inherited from [QRDataBase](qrdatabase.md).[getLengthInBits](qrdatabase.md#getlengthinbits)*
 
-*Defined in models/qrDataBase.ts:57*
+*Defined in [models/qrDataBase.ts:57](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L57*
 
 Get the length in bits of the data.
 
@@ -114,7 +114,7 @@ ___
 
 *Inherited from [QRDataBase](qrdatabase.md).[getMode](qrdatabase.md#getmode)*
 
-*Defined in models/qrDataBase.ts:28*
+*Defined in [models/qrDataBase.ts:28](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L28*
 
 Get the data mode.
 
@@ -130,7 +130,7 @@ ___
 
 *Overrides [QRDataBase](qrdatabase.md).[write](qrdatabase.md#write)*
 
-*Defined in data/qrAlphaNumeric.ts:30*
+*Defined in [data/qrAlphaNumeric.ts:30](https://github.com/tangle-frost/iota-qr-core/tree/master/src/data/qrAlphaNumeric.ts#L30*
 
 Write data into the buffer.
 

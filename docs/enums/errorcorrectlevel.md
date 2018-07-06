@@ -23,7 +23,7 @@ Error correction level to use for the QR Code. Based on [https://github.com/kazu
 
 **H**:  = 2
 
-*Defined in models/errorCorrectLevel.ts:24*
+*Defined in [models/errorCorrectLevel.ts:24](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/errorCorrectLevel.ts#L24*
 
 30%
 
@@ -34,7 +34,7 @@ ___
 
 **L**:  = 1
 
-*Defined in models/errorCorrectLevel.ts:9*
+*Defined in [models/errorCorrectLevel.ts:9](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/errorCorrectLevel.ts#L9*
 
 7%
 
@@ -45,7 +45,7 @@ ___
 
 **M**:  = 0
 
-*Defined in models/errorCorrectLevel.ts:14*
+*Defined in [models/errorCorrectLevel.ts:14](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/errorCorrectLevel.ts#L14*
 
 15%
 
@@ -56,7 +56,7 @@ ___
 
 **Q**:  = 3
 
-*Defined in models/errorCorrectLevel.ts:19*
+*Defined in [models/errorCorrectLevel.ts:19](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/errorCorrectLevel.ts#L19*
 
 25%
 
