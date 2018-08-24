@@ -34,7 +34,7 @@
 
 ###  QRCellData
 
-**ΤQRCellData**: *`boolean`[][]*
+**Ƭ QRCellData**: *`boolean`[][]*
 
 *Defined in [models/qrCellData.ts:4](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrCellData.ts#L4*
 
