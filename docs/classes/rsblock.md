@@ -36,7 +36,7 @@ Create a new insstance of RSBlock.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | totalCount | `number` |  The total count for the block. |
 | dataCount | `number` |  The data count for the block. |
@@ -87,7 +87,7 @@ Get RS Blocks for the type number and error correct level.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | typeNumber | `number` |  The type number. |
 | errorCorrectLevel | [ErrorCorrectLevel](../enums/errorcorrectlevel.md) |  The error correct level. |

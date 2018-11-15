@@ -35,7 +35,7 @@ Get the BCH type info.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | data | `number` |  The data to get the BCH type info for. |
 
@@ -55,7 +55,7 @@ Get the BCH type number.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | data | `number` |  The data to get the BCH type number for. |
 
@@ -75,7 +75,7 @@ Get the error correction polynomial for the error correcto length.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | errorCorrectLength | `number` |  The error correction length to get the polynomial for. |
 
@@ -95,7 +95,7 @@ Get the mask method for the given pattern.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | maskPattern | `number` |  The pattern to get the mask for. |
 
@@ -115,7 +115,7 @@ Get the max length of the data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | typeNumber | `number` |  The type number to get the max length for. |
 | mode | [QRDataMode](../enums/qrdatamode.md) |  The data mode to get data max length for. |
@@ -137,7 +137,7 @@ Get the pattern position for the given type number.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | typeNumber | `number` |  The type number to get the pattern for. |
 

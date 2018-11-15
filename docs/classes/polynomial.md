@@ -39,7 +39,7 @@ Create a new instance of Polynomial.
 
 **Parameters:**
 
-| Param | Type | Default value | Description |
+| Name | Type | Default value | Description |
 | ------ | ------ | ------ | ------ |
 | num | `number`[] | - |  The num of the polynomial. |
 | `Default value` shift | `number` | 0 |  The shift for the polynomial. |
@@ -62,7 +62,7 @@ The the value of the polynomial at given index.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | index | `number` |  The index. |
 
@@ -96,7 +96,7 @@ Get the modulus of the polynomial from another.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | e | [Polynomial](polynomial.md) |  The polynomial. |
 
@@ -116,7 +116,7 @@ Multiply the polynomial with another one.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | e | [Polynomial](polynomial.md) |  The polynomial to multiply. |
 

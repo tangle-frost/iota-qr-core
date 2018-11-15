@@ -1,5 +1,5 @@
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\index.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\index.ts
 FNF:0
 FNH:0
 LF:0
@@ -8,7 +8,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\qr.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\qr.ts
 FN:44,(anonymous_0)
 FN:61,(anonymous_1)
 FN:69,(anonymous_2)
@@ -470,7 +470,7 @@ BRF:149
 BRH:129
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\data\qrAlphaNumeric.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\data\qrAlphaNumeric.ts
 FN:14,(anonymous_0)
 FN:22,(anonymous_1)
 FN:30,(anonymous_2)
@@ -534,7 +534,7 @@ BRF:20
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\data\qrByte8.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\data\qrByte8.ts
 FN:14,(anonymous_0)
 FN:22,(anonymous_1)
 FN:30,(anonymous_2)
@@ -580,7 +580,7 @@ BRF:8
 BRH:1
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\data\qrNumber.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\data\qrNumber.ts
 FN:14,(anonymous_0)
 FN:22,(anonymous_1)
 FN:30,(anonymous_2)
@@ -631,7 +631,7 @@ BRF:10
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\helpers\bitBuffer.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\helpers\bitBuffer.ts
 FN:9,(anonymous_0)
 FN:14,(anonymous_1)
 FN:18,(anonymous_2)
@@ -677,7 +677,7 @@ BRF:6
 BRH:4
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\helpers\mathHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\helpers\mathHelper.ts
 FN:14,(anonymous_0)
 FN:37,(anonymous_1)
 FN:49,(anonymous_2)
@@ -716,7 +716,7 @@ BRF:6
 BRH:5
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\helpers\polynomial.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\helpers\polynomial.ts
 FN:16,(anonymous_0)
 FN:38,(anonymous_1)
 FN:46,(anonymous_2)
@@ -790,7 +790,7 @@ BRF:9
 BRH:5
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\helpers\qrHelper.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\helpers\qrHelper.ts
 FN:87,(anonymous_0)
 FN:98,(anonymous_1)
 FN:128,(anonymous_2)
@@ -902,7 +902,7 @@ BRF:18
 BRH:8
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\helpers\rsBlock.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\helpers\rsBlock.ts
 FN:264,(anonymous_0)
 FN:275,(anonymous_1)
 FN:296,(anonymous_2)
@@ -949,7 +949,7 @@ BRF:5
 BRH:1
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\models\errorCorrectLevel.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\models\errorCorrectLevel.ts
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
@@ -967,7 +967,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\models\maskPattern.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\models\maskPattern.ts
 FN:5,(anonymous_0)
 FNF:1
 FNH:1
@@ -989,7 +989,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\models\qrCellData.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\models\qrCellData.ts
 FNF:0
 FNH:0
 LF:0
@@ -998,7 +998,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\models\qrDataBase.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\models\qrDataBase.ts
 FN:19,(anonymous_0)
 FN:28,(anonymous_1)
 FN:36,(anonymous_2)
@@ -1060,7 +1060,7 @@ BRF:20
 BRH:4
 end_of_record
 TN:
-SF:D:\Workarea\tangle-frost\iota-qr-core\src\models\qrDataMode.ts
+SF:D:\Workarea\iota.eco\tangle-frost\iota-qr-core\src\models\qrDataMode.ts
 FN:5,(anonymous_0)
 FNF:1
 FNH:1

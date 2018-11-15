@@ -32,7 +32,7 @@ Get the exponent of the value.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `number` |  The value to get the exponent of. |
 
@@ -52,7 +52,7 @@ Get the log of the value.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | value | `number` |  The value to get the log of. |
 

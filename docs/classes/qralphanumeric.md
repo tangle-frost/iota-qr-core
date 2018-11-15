@@ -42,7 +42,7 @@ Create a new instance of QRAlphaNumeric.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | data | `string` |  The data for the qr alpha numeric. |
 
@@ -98,7 +98,7 @@ Get the length in bits of the data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | typeNumber | `number` |  The type number to get the length for. |
 
@@ -136,7 +136,7 @@ Write data into the buffer.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | buffer | [BitBuffer](bitbuffer.md) |  The buffer to write into. |
 

@@ -44,7 +44,7 @@ Create a new instance of QRDataBase.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | mode | [QRDataMode](../enums/qrdatamode.md) |  The mode for the data. |
 | data | `string` |  The data. |
@@ -95,7 +95,7 @@ Get the length in bits of the data.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | typeNumber | `number` |  The type number to get the length for. |
 
@@ -129,7 +129,7 @@ Write data into the buffer.
 
 **Parameters:**
 
-| Param | Type | Description |
+| Name | Type | Description |
 | ------ | ------ | ------ |
 | buffer | [BitBuffer](bitbuffer.md) |  The buffer to write into. |
 

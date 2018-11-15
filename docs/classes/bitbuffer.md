@@ -72,7 +72,7 @@ ___
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | num | `number` |
 | length | `number` |
@@ -90,7 +90,7 @@ ___
 
 **Parameters:**
 
-| Param | Type |
+| Name | Type |
 | ------ | ------ |
 | bit | `boolean` |
 
