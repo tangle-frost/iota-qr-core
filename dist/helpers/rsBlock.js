@@ -50,14 +50,14 @@ class RSBlock {
         throw new Error(`Invalid error correct level ${errorCorrectLevel}`);
     }
     /**
-     * Get the data count.
+     * Get the data count of the block.
      * @returns The data count.
      */
     getDataCount() {
         return this._dataCount;
     }
     /**
-     * Get the total count.
+     * Get the total count of blocks.
      * @returns The total count.
      */
     getTotalCount() {

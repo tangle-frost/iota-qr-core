@@ -30,7 +30,7 @@ export abstract class QRDataBase {
     }
 
     /**
-     * Get the data.
+     * Get the data for the qr.
      * @returns The data.
      */
     public getData(): string {

@@ -20,12 +20,12 @@ export declare class RSBlock {
      */
     static getRSBlocks(typeNumber: number, errorCorrectLevel: ErrorCorrectLevel): RSBlock[];
     /**
-     * Get the data count.
+     * Get the data count of the block.
      * @returns The data count.
      */
     getDataCount(): number;
     /**
-     * Get the total count.
+     * Get the total count of blocks.
      * @returns The total count.
      */
     getTotalCount(): number;

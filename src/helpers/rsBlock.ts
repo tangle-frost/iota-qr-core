@@ -310,7 +310,7 @@ export class RSBlock {
     }
 
     /**
-     * Get the data count.
+     * Get the data count of the block.
      * @returns The data count.
      */
     public getDataCount(): number {
@@ -318,7 +318,7 @@ export class RSBlock {
     }
 
     /**
-     * Get the total count.
+     * Get the total count of blocks.
      * @returns The total count.
      */
     public getTotalCount(): number {

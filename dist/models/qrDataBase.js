@@ -22,7 +22,7 @@ class QRDataBase {
         return this._mode;
     }
     /**
-     * Get the data.
+     * Get the data for the qr.
      * @returns The data.
      */
     getData() {

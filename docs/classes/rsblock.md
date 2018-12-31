@@ -55,7 +55,7 @@ ___
 
 *Defined in [helpers/rsBlock.ts:316](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L316*
 
-Get the data count.
+Get the data count of the block.
 
 **Returns:** `number`
 The data count.
@@ -69,7 +69,7 @@ ___
 
 *Defined in [helpers/rsBlock.ts:324](https://github.com/tangle-frost/iota-qr-core/tree/master/src/helpers/rsBlock.ts#L324*
 
-Get the total count.
+Get the total count of blocks.
 
 **Returns:** `number`
 The total count.

@@ -17,7 +17,7 @@ export declare abstract class QRDataBase {
      */
     getMode(): QRDataMode;
     /**
-     * Get the data.
+     * Get the data for the qr.
      * @returns The data.
      */
     getData(): string;

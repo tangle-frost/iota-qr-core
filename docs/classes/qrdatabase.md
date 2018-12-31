@@ -63,7 +63,7 @@ ___
 
 *Defined in [models/qrDataBase.ts:36](https://github.com/tangle-frost/iota-qr-core/tree/master/src/models/qrDataBase.ts#L36*
 
-Get the data.
+Get the data for the qr.
 
 **Returns:** `string`
 The data.
