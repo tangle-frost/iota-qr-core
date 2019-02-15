@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">36% </span>
+        <span class="strong">36.84% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>9/25</span>
+        <span class='fraction'>7/19</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">20% </span>
+        <span class="strong">21.43% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/20</span>
+        <span class='fraction'>3/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">36% </span>
+        <span class="strong">36.84% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>9/25</span>
+        <span class='fraction'>7/19</span>
       </div>
     </div>
     <p class="quiet">
@@ -189,24 +189,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -275,7 +275,7 @@ export abstract class QRDataBase {
      * @returns The length in bits.
      */
     public getLengthInBits(typeNumber: number): number {
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (typeNumber &gt;= 1 &amp;&amp; typeNumber &lt; 10) {
+        if (typeNumber &gt;= 1 &amp;&amp; typeNumber &lt; 10) {
             switch (this._mode) {
 <span class="branch-0 cbranch-no" title="branch not covered" >                case QRDataMode.number: <span class="cstat-no" title="statement not covered" >return 10;</span></span>
 <span class="branch-1 cbranch-no" title="branch not covered" >                case QRDataMode.alphaNumeric: <span class="cstat-no" title="statement not covered" >return 9;</span></span>
@@ -283,16 +283,16 @@ export abstract class QRDataBase {
 <span class="branch-3 cbranch-no" title="branch not covered" >                default:</span>
 <span class="cstat-no" title="statement not covered" >                    throw new Error(`Invalid mode ${this._mode}`);</span>
             }
-        } else <span class="cstat-no" title="statement not covered" >if (typeNumber &lt; 27) {</span>
-<span class="cstat-no" title="statement not covered" >            switch (this._mode) {</span>
+        } else if (typeNumber &lt; 27) {
+            switch (this._mode) {
                 case QRDataMode.number: <span class="cstat-no" title="statement not covered" >return 12;</span>
                 case QRDataMode.alphaNumeric: <span class="cstat-no" title="statement not covered" >return 11;</span>
                 case QRDataMode.byte8: <span class="cstat-no" title="statement not covered" >return 16;</span>
                 default:
 <span class="cstat-no" title="statement not covered" >                    throw new Error(`Invalid mode ${this._mode}`);</span>
             }
-        } else <span class="cstat-no" title="statement not covered" >if (typeNumber &lt; 41) {</span>
-<span class="cstat-no" title="statement not covered" >            switch (this._mode) {</span>
+        } else if (typeNumber &lt; 41) {
+            switch (this._mode) {
                 case QRDataMode.number: <span class="cstat-no" title="statement not covered" >return 14;</span>
                 case QRDataMode.alphaNumeric: <span class="cstat-no" title="statement not covered" >return 13;</span>
                 case QRDataMode.byte8: <span class="cstat-no" title="statement not covered" >return 16;</span>

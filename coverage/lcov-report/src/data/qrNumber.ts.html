@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">13.64% </span>
+        <span class="strong">17.65% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/22</span>
+        <span class='fraction'>3/17</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">13.64% </span>
+        <span class="strong">17.65% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/22</span>
+        <span class='fraction'>3/17</span>
       </div>
     </div>
     <p class="quiet">
@@ -145,24 +145,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -170,7 +159,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -189,7 +189,7 @@ export class QRNumber extends QRDataBase {
      * Create a new instance of QRNumber.
      * @param data The data for the qr number.
      */
-<span class="fstat-no" title="function not covered" >    constructor(</span>data: string) {
+<span class="fstat-no" title="function not covered" >    constructor(d</span>ata: string) {
 <span class="cstat-no" title="statement not covered" >        super(QRDataMode.number, data);</span>
     }
 &nbsp;
@@ -197,7 +197,7 @@ export class QRNumber extends QRDataBase {
      * Get the length of the data.
      * @returns The length of the data.
      */
-    public <span class="fstat-no" title="function not covered" >getLength</span>(): number {
+    public <span class="fstat-no" title="function not covered" >getLength(</span>): number {
 <span class="cstat-no" title="statement not covered" >        return this.getData().length;</span>
     }
 &nbsp;
@@ -205,37 +205,37 @@ export class QRNumber extends QRDataBase {
      * Write data into the buffer.
      * @param buffer The buffer to write into.
      */
-    public <span class="fstat-no" title="function not covered" >write</span>(buffer: BitBuffer): void {
+    public <span class="fstat-no" title="function not covered" >write(</span>buffer: BitBuffer): void {
         const data = <span class="cstat-no" title="statement not covered" >this.getData();</span>
 &nbsp;
         let i = <span class="cstat-no" title="statement not covered" >0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        while (i + 2 &lt; data.length) {</span>
+        while (i + 2 &lt; data.length) {
 <span class="cstat-no" title="statement not covered" >            buffer.put(this.strToNum(data.substring(i, i + 3)), 10);</span>
 <span class="cstat-no" title="statement not covered" >            i += 3;</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (i &lt; data.length) {</span>
-<span class="cstat-no" title="statement not covered" >            if (data.length - i === 1) {</span>
+        if (i &lt; data.length) {
+            if (data.length - i === 1) {
 <span class="cstat-no" title="statement not covered" >                buffer.put(this.strToNum(data.substring(i, i + 1)), 4);</span>
-            } else <span class="cstat-no" title="statement not covered" >if (data.length - i === 2) {</span>
+            } else if (data.length - i === 2) {
 <span class="cstat-no" title="statement not covered" >                buffer.put(this.strToNum(data.substring(i, i + 2)), 7);</span>
             }
         }
     }
 &nbsp;
     /* @internal */
-    private <span class="fstat-no" title="function not covered" >strToNum</span>(s: string): number {
+    private <span class="fstat-no" title="function not covered" >strToNum(</span>s: string): number {
         let num = <span class="cstat-no" title="statement not covered" >0;</span>
-<span class="cstat-no" title="statement not covered" >        for (let i = 0; i &lt; s.length; i++) {</span>
+        for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; s.length; i++) {
 <span class="cstat-no" title="statement not covered" >            num = num * 10 + this.charToNum(s.charAt(i));</span>
         }
 <span class="cstat-no" title="statement not covered" >        return num;</span>
     }
 &nbsp;
     /* @internal */
-    private <span class="fstat-no" title="function not covered" >charToNum</span>(c: string): number {
-<span class="cstat-no" title="statement not covered" >        if (c &gt;= "0" &amp;&amp; c &lt;= "9") {</span>
+    private <span class="fstat-no" title="function not covered" >charToNum(</span>c: string): number {
+        if (c &gt;= "0" &amp;&amp; c &lt;= "9") {
 <span class="cstat-no" title="statement not covered" >            return c.charCodeAt(0) - "0".charCodeAt(0);</span>
         }
 <span class="cstat-no" title="statement not covered" >        throw new Error(`Illegal character in string : ${c}`);</span>

@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">72.22% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>14/21</span>
+        <span class='fraction'>13/18</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">12.5% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>1/8</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">72.22% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>14/21</span>
+        <span class='fraction'>13/18</span>
       </div>
     </div>
     <p class="quiet">
@@ -153,12 +153,12 @@
 <span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-yes">252x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">252x</span>
-<span class="cline-any cline-yes">252x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -219,12 +219,12 @@ export class QRByte8 extends QRDataBase {
         const utf8: number[] = [];
         for (let i = 0; i &lt; str.length; i++) {
             let charcode = str.charCodeAt(i);
-            <span class="missing-if-branch" title="else path not taken" >E</span>if (charcode &lt; 0x80) {
+            if (charcode &lt; 0x80) {
                 utf8.push(charcode);
-            } else <span class="cstat-no" title="statement not covered" >if (charcode &lt; 0x800) {</span>
+            } else if (charcode &lt; 0x800) {
 <span class="cstat-no" title="statement not covered" >                utf8.push(0xC0 | (charcode &gt;&gt; 6),</span>
                           0x80 | (charcode &amp; 0x3F));
-            } else <span class="cstat-no" title="statement not covered" >if (charcode &lt; 0xD800 || charcode &gt;= 0xE000) {</span>
+            } else if (charcode &lt; 0xD800 || charcode &gt;= 0xE000) {
 <span class="cstat-no" title="statement not covered" >                utf8.push(0xE0 | (charcode &gt;&gt; 12),</span>
                           0x80 | ((charcode &gt;&gt; 6) &amp; 0x3F),
                           0x80 | (charcode &amp; 0x3F));

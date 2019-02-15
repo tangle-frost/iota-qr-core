@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>10/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">66.67% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/6</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">71.43% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>5/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">70.59% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>12/17</span>
+        <span class='fraction'>10/15</span>
       </div>
     </div>
     <p class="quiet">
@@ -123,10 +123,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9792x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1224x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9792x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4239x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">9792x</span>
@@ -181,15 +181,15 @@ export class BitBuffer {
         this._length++;
     }
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >toString</span>(): string {
+    public <span class="fstat-no" title="function not covered" >toString(</span>): string {
         let buffer = <span class="cstat-no" title="statement not covered" >"";</span>
-<span class="cstat-no" title="statement not covered" >        for (let i = 0; i &lt; this.getLengthInBits(); i++) {</span>
+        for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; this.getLengthInBits(); i++) {
 <span class="cstat-no" title="statement not covered" >            buffer += this.getBit(i) ? "1" : "0";</span>
         }
 <span class="cstat-no" title="statement not covered" >        return buffer;</span>
     }
 &nbsp;
-    private <span class="fstat-no" title="function not covered" >getBit</span>(index: number): boolean {
+    private <span class="fstat-no" title="function not covered" >getBit(</span>index: number): boolean {
 <span class="cstat-no" title="statement not covered" >        return ((this._buffer[~~(index / 8)] &gt;&gt;&gt; (7 - index % 8)) &amp; 1) === 1;</span>
     }
 }

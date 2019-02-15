@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">61.43% </span>
+        <span class="strong">62.5% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>43/70</span>
+        <span class='fraction'>40/64</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">44.44% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>13/15</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">63.64% </span>
+        <span class="strong">65.31% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>35/55</span>
+        <span class='fraction'>32/49</span>
       </div>
     </div>
     <p class="quiet">
@@ -353,7 +353,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -362,7 +362,7 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -394,7 +394,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1383x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -424,7 +424,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">21x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -438,7 +438,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -449,7 +449,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">102x</span>
 <span class="cline-any cline-yes">102x</span>
-<span class="cline-any cline-yes">102x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1183x</span>
 <span class="cline-any cline-yes">1183x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -553,12 +553,12 @@ export class QRHelper {
      * @param errorCorrectLevel The error correction to get the max length for.
      * @returns The max length.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> getMaxLength(typeNumber: number, mode: QRDataMode, errorCorrectLevel: ErrorCorrectLevel): number {
+    public <span class="fstat-no" title="function not covered" >static </span>getMaxLength(typeNumber: number, mode: QRDataMode, errorCorrectLevel: ErrorCorrectLevel): number {
         const t = <span class="cstat-no" title="statement not covered" >typeNumber - 1;</span>
         let e = <span class="cstat-no" title="statement not covered" >0;</span>
         let m = <span class="cstat-no" title="statement not covered" >0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        switch (errorCorrectLevel) {</span>
+        switch (errorCorrectLevel) {
             case ErrorCorrectLevel.L: <span class="cstat-no" title="statement not covered" >e = 0; <span class="cstat-no" title="statement not covered" ></span>break;</span>
             case ErrorCorrectLevel.M: <span class="cstat-no" title="statement not covered" >e = 1; <span class="cstat-no" title="statement not covered" ></span>break;</span>
             case ErrorCorrectLevel.Q: <span class="cstat-no" title="statement not covered" >e = 2; <span class="cstat-no" title="statement not covered" ></span>break;</span>
@@ -567,7 +567,7 @@ export class QRHelper {
 <span class="cstat-no" title="statement not covered" >                throw new Error(`Unknown error correction level ${errorCorrectLevel}`);</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        switch (mode) {</span>
+        switch (mode) {
             case QRDataMode.number: <span class="cstat-no" title="statement not covered" >m = 0; <span class="cstat-no" title="statement not covered" ></span>break;</span>
             case QRDataMode.alphaNumeric: <span class="cstat-no" title="statement not covered" >m = 1; <span class="cstat-no" title="statement not covered" ></span>break;</span>
             case QRDataMode.byte8: <span class="cstat-no" title="statement not covered" >m = 2; <span class="cstat-no" title="statement not covered" ></span>break;</span>
@@ -641,9 +641,9 @@ export class QRHelper {
      * @param data The data to get the BCH type number for.
      * @returns The type number.
      */
-    public <span class="fstat-no" title="function not covered" >static</span> getBCHTypeNumber(data: number): number {
+    public <span class="fstat-no" title="function not covered" >static </span>getBCHTypeNumber(data: number): number {
         let d = <span class="cstat-no" title="statement not covered" >data &lt;&lt; 12;</span>
-<span class="cstat-no" title="statement not covered" >        while (QRHelper.getBCHDigit(d) - QRHelper.getBCHDigit(QRHelper.G18) &gt;= 0) {</span>
+        while (QRHelper.getBCHDigit(d) - QRHelper.getBCHDigit(QRHelper.G18) &gt;= 0) {
 <span class="cstat-no" title="statement not covered" >            d ^= (QRHelper.G18 &lt;&lt; (QRHelper.getBCHDigit(d) -</span>
                 QRHelper.getBCHDigit(QRHelper.G18)));
         }

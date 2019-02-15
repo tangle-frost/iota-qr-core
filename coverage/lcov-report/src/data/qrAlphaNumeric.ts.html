@@ -20,14 +20,14 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.11% </span>
+        <span class="strong">13.64% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/27</span>
+        <span class='fraction'>3/22</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/20</span>
+        <span class='fraction'>0/14</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -35,9 +35,9 @@
         <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">11.11% </span>
+        <span class="strong">13.64% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/27</span>
+        <span class='fraction'>3/22</span>
       </div>
     </div>
     <p class="quiet">
@@ -149,16 +149,17 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -166,11 +167,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -199,7 +199,7 @@ export class QRAlphaNumeric extends QRDataBase {
      * Create a new instance of QRAlphaNumeric.
      * @param data The data for the qr alpha numeric.
      */
-<span class="fstat-no" title="function not covered" >    constructor(</span>data: string) {
+<span class="fstat-no" title="function not covered" >    constructor(d</span>ata: string) {
 <span class="cstat-no" title="statement not covered" >        super(QRDataMode.alphaNumeric, data);</span>
     }
 &nbsp;
@@ -207,7 +207,7 @@ export class QRAlphaNumeric extends QRDataBase {
      * Get the length of the data.
      * @returns The length of the data.
      */
-    public <span class="fstat-no" title="function not covered" >getLength</span>(): number {
+    public <span class="fstat-no" title="function not covered" >getLength(</span>): number {
 <span class="cstat-no" title="statement not covered" >        return this.getData().length;</span>
     }
 &nbsp;
@@ -215,11 +215,11 @@ export class QRAlphaNumeric extends QRDataBase {
      * Write data into the buffer.
      * @param buffer The buffer to write into.
      */
-    public <span class="fstat-no" title="function not covered" >write</span>(buffer: BitBuffer): void {
+    public <span class="fstat-no" title="function not covered" >write(</span>buffer: BitBuffer): void {
         const s = <span class="cstat-no" title="statement not covered" >this.getData();</span>
         let i = <span class="cstat-no" title="statement not covered" >0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        while (i + 1 &lt; s.length) {</span>
+        while (i + 1 &lt; s.length) {
 <span class="cstat-no" title="statement not covered" >            buffer.put(</span>
                 this.getCode(s.charAt(i)) * 45 +
                 this.getCode(s.charAt(i + 1)),
@@ -227,20 +227,20 @@ export class QRAlphaNumeric extends QRDataBase {
 <span class="cstat-no" title="statement not covered" >            i += 2;</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (i &lt; s.length) {</span>
+        if (i &lt; s.length) {
 <span class="cstat-no" title="statement not covered" >            buffer.put(this.getCode(s.charAt(i)), 6);</span>
         }
     }
 &nbsp;
     /* @internal */
-    private <span class="fstat-no" title="function not covered" >getCode</span>(c: string): number {
+    private <span class="fstat-no" title="function not covered" >getCode(</span>c: string): number {
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (c &gt;= "0" &amp;&amp; c &lt;= "9") {</span>
+        if (c &gt;= "0" &amp;&amp; c &lt;= "9") {
 <span class="cstat-no" title="statement not covered" >            return c.charCodeAt(0) - "0".charCodeAt(0);</span>
-        } else <span class="cstat-no" title="statement not covered" >if (c &gt;= "A" &amp;&amp; c &lt;= "Z") {</span>
+        } else if (c &gt;= "A" &amp;&amp; c &lt;= "Z") {
 <span class="cstat-no" title="statement not covered" >            return c.charCodeAt(0) - "A".charCodeAt(0) + 10;</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            switch (c) {</span>
+            switch (c) {
                 case " ": <span class="cstat-no" title="statement not covered" >return 36;</span>
                 case "$": <span class="cstat-no" title="statement not covered" >return 37;</span>
                 case "%": <span class="cstat-no" title="statement not covered" >return 38;</span>
