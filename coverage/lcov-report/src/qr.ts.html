@@ -642,7 +642,8 @@
 <a name='L594'></a><a href='#L594'>594</a>
 <a name='L595'></a><a href='#L595'>595</a>
 <a name='L596'></a><a href='#L596'>596</a>
-<a name='L597'></a><a href='#L597'>597</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L597'></a><a href='#L597'>597</a>
+<a name='L598'></a><a href='#L598'>598</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -749,7 +750,6 @@
 <span class="cline-any cline-yes">228881x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1232,6 +1232,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1343,9 +1345,8 @@ export class QR {
     private isDark(row: number, col: number): boolean {
         if (this._modules[row][col] !== null) {
             return this._modules[row][col];
-        } else {
-<span class="cstat-no" title="statement not covered" >            return false;</span>
         }
+<span class="cstat-no" title="statement not covered" >        return false;</span>
     }
 &nbsp;
     /* @internal */
@@ -1827,7 +1828,9 @@ export class QR {
                 if (buffer.getLengthInBits() &lt;= totalDataCount * 8) {
 <span class="cstat-no" title="statement not covered" >                    this._typeNumber = typeNumber;</span>
 <span class="cstat-no" title="statement not covered" >                    break;</span>
-                } else if (typeNumber === 40) {
+                }
+&nbsp;
+                if (typeNumber === 40) {
 <span class="cstat-no" title="statement not covered" >                    throw new Error(`There is not enough space in the QR code to store the data, ${buffer.getLengthInBits()} &gt; ${totalDataCount * 8}, typeNumber can not be &gt; 40`);</span>
                 }
             }

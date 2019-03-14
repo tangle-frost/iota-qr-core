@@ -168,21 +168,21 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -237,22 +237,22 @@ export class QRAlphaNumeric extends QRDataBase {
 &nbsp;
         if (c &gt;= "0" &amp;&amp; c &lt;= "9") {
 <span class="cstat-no" title="statement not covered" >            return c.charCodeAt(0) - "0".charCodeAt(0);</span>
-        } else if (c &gt;= "A" &amp;&amp; c &lt;= "Z") {
+        }
+        if (c &gt;= "A" &amp;&amp; c &lt;= "Z") {
 <span class="cstat-no" title="statement not covered" >            return c.charCodeAt(0) - "A".charCodeAt(0) + 10;</span>
-        } else {
-            switch (c) {
-                case " ": <span class="cstat-no" title="statement not covered" >return 36;</span>
-                case "$": <span class="cstat-no" title="statement not covered" >return 37;</span>
-                case "%": <span class="cstat-no" title="statement not covered" >return 38;</span>
-                case "*": <span class="cstat-no" title="statement not covered" >return 39;</span>
-                case "+": <span class="cstat-no" title="statement not covered" >return 40;</span>
-                case "-": <span class="cstat-no" title="statement not covered" >return 41;</span>
-                case ".": <span class="cstat-no" title="statement not covered" >return 42;</span>
-                case "/": <span class="cstat-no" title="statement not covered" >return 43;</span>
-                case ":": <span class="cstat-no" title="statement not covered" >return 44;</span>
-                default:
-<span class="cstat-no" title="statement not covered" >                    throw new Error(`Illegal character in string : ${c}`);</span>
-            }
+        }
+        switch (c) {
+            case " ": <span class="cstat-no" title="statement not covered" >return 36;</span>
+            case "$": <span class="cstat-no" title="statement not covered" >return 37;</span>
+            case "%": <span class="cstat-no" title="statement not covered" >return 38;</span>
+            case "*": <span class="cstat-no" title="statement not covered" >return 39;</span>
+            case "+": <span class="cstat-no" title="statement not covered" >return 40;</span>
+            case "-": <span class="cstat-no" title="statement not covered" >return 41;</span>
+            case ".": <span class="cstat-no" title="statement not covered" >return 42;</span>
+            case "/": <span class="cstat-no" title="statement not covered" >return 43;</span>
+            case ":": <span class="cstat-no" title="statement not covered" >return 44;</span>
+            default:
+<span class="cstat-no" title="statement not covered" >                throw new Error(`Illegal character in string : ${c}`);</span>
         }
     }
 }

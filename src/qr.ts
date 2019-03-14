@@ -103,9 +103,8 @@ export class QR {
     private isDark(row: number, col: number): boolean {
         if (this._modules[row][col] !== null) {
             return this._modules[row][col];
-        } else {
-            return false;
         }
+        return false;
     }
 
     /* @internal */
@@ -587,7 +586,9 @@ export class QR {
                 if (buffer.getLengthInBits() <= totalDataCount * 8) {
                     this._typeNumber = typeNumber;
                     break;
-                } else if (typeNumber === 40) {
+                }
+
+                if (typeNumber === 40) {
                     throw new Error(`There is not enough space in the QR code to store the data, ${buffer.getLengthInBits()} > ${totalDataCount * 8}, typeNumber can not be > 40`);
                 }
             }

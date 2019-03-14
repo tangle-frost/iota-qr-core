@@ -49,22 +49,22 @@ export class QRAlphaNumeric extends QRDataBase {
 
         if (c >= "0" && c <= "9") {
             return c.charCodeAt(0) - "0".charCodeAt(0);
-        } else if (c >= "A" && c <= "Z") {
+        }
+        if (c >= "A" && c <= "Z") {
             return c.charCodeAt(0) - "A".charCodeAt(0) + 10;
-        } else {
-            switch (c) {
-                case " ": return 36;
-                case "$": return 37;
-                case "%": return 38;
-                case "*": return 39;
-                case "+": return 40;
-                case "-": return 41;
-                case ".": return 42;
-                case "/": return 43;
-                case ":": return 44;
-                default:
-                    throw new Error(`Illegal character in string : ${c}`);
-            }
+        }
+        switch (c) {
+            case " ": return 36;
+            case "$": return 37;
+            case "%": return 38;
+            case "*": return 39;
+            case "+": return 40;
+            case "-": return 41;
+            case ".": return 42;
+            case "/": return 43;
+            case ":": return 44;
+            default:
+                throw new Error(`Illegal character in string : ${c}`);
         }
     }
 }
